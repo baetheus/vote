@@ -1,0 +1,186 @@
+/** Reset */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ff-head {
+  font-family: "Markazi Text";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+}
+
+body > main {
+  flex: 1 1 auto;
+}
+
+button {
+  font-size: inherit;
+}
+
+// Reset
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend .ff-head;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+pre,
+input,
+button,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+p,
+ul.spaced > li {
+  line-height: calc(var(--font-size) * 1.5);
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/** Utility */
+.td-up {
+  text-transform: uppercase;
+}
+
+.ls-dot {
+  list-style-position: outside;
+  list-style-type: circle;
+  margin-left: calc(var(--margin-width-4) * 4);
+}
+
+.vw-px300 {
+  width: 300px;
+}
+
+.vwmx-px300 {
+  max-width: 300px;
+}
+
+.vwcmx-px500 > * {
+  max-width: 500px;
+}
+
+.vwcmx-px300 > * {
+  max-width: 300px;
+}
+
+.sq-px300 {
+  width: 300px;
+  height: 300px;
+}
+
+.ps-abs {
+  position: absolute;
+}
+
+.ps-rel {
+  position: relative;
+}
+
+.ps-fix {
+  position: fixed;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+@media (max-height: 750px) {
+  .jc-spb-on-sm {
+    justify-content: space-between;
+  }
+}
+
+// Scrollbars
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: var(--cb-honey-dark);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: var(--cb-honey-dark);
+}
+
+/* Focus */
+a:focus,
+article:focus,
+input:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 1.5px 1.5px var(--cb-focus);
+}
+
+.fit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13ch, 1fr));
+  grid-gap: var(--margin-width-2);
+}
+
+.fit-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13ch, 1fr));
+  grid-gap: var(--margin-width-3);
+}
+
+.sq-px32 {
+  width: 32px;
+  height: 32px;
+}
+
+.fls-1-1-last > :last-child {
+  flex: 1 1 auto;
+}

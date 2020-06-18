@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "lib": ["dom", "esnext"],
+
+    "sourceMap": true,
+    "strict": true,
+
+    "jsx": "react",
+    "jsxFactory": "h",
+
+    "baseUrl": "./",
+    "paths": { "*": ["web_modules/.types/*"] },
+
+    "noEmit": true
+  },
+  "include": ["src", "types"],
+  "exclude": ["node_modules"]
+}

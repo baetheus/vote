@@ -1,0 +1,17 @@
+/index.html
+  cache-control: max-age=0,no-cache,no-store,must-revalidate
+
+/*.js
+  cache-control: public,max-age=604800
+
+/*.css
+  cache-control: public,max-age=604800
+
+/*.json
+  cache-control: public,max-age=604800
+
+/*.ttf
+  cache-control: public,max-age=604800
+
+/*.ico
+  cache-control: public,max-age=604800
