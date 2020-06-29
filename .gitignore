@@ -1,5 +1,8 @@
+.vscode
 .build
 build
 web_modules
 node_modules
 .DS_Store
+.env
+.prod.env

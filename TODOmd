@@ -1,0 +1,10 @@
+# Vote TODO
+
+* Create deno heroku backend
+    * Create election
+    * Take vote
+    * Close election
+    * Clone election
+    * Get results
+* Create Vote Page
+* Edit Vote Page

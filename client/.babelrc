@@ -1,4 +1,4 @@
 {
-  "presets": [["@babel/preset-typescript", { "jsxPragma": "h" }]],
+  "presets": [["@babel/preset-typescript", { "jsxPragma": "h",  }]],
   "plugins": [["@babel/plugin-transform-react-jsx", { "pragma": "h" }]]
 }
